@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendence Page</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+img {
+  border-radius: 8px;
+}
+</style>
+<style>
+body {
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+  </head>
+  <body>
+    <img src="/images/logo.jpg" width=100% alt="logo">
+    <p></p>
+
+        <p><h3><center>
+    Date : <span id="outputday">____</span> / <span id="outputmonth">____</span> / 2020. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event Name : <span id="outputevent">____</span>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timing : <span id="outputinhour">____</span> : <span id="outputinhour">____</span> to <span id="outputouthour">____</span> : <span id="outputouthour">____</span>.</center></h3>
+
+    <form class="event" action="result.html" method="get" autocomplete="off">
+    <div id="form-wrapper" style="max-width:500px;margin:auto;">
+
+      <fieldset>
+        <legend><h1><center>Register Your Presence Here !</center></h1></legend>
+<h2>
+                <label for="name" align="right">Enter name :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="" value="" id="name" placeholder="Full Name" align="right" required autofocus><br>
+                        <label for="roll" align="right">Enter Roll no. :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" name="" value="" id="roll" placeholder="Roll no." align="right" title="enter proper roll no." required><br>
+                                <label for="ph">Enter Mobile No. :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" name="" value="+91" id="ph" required><br>
+                                      <label for="email">Enter email :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                      <input type="email" name="" value="" id="email" placeholder="Your email here" required><br>
+                                            Select Your Course :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <select class="course" name="course" id="course" required>
+                                            <option value="">Please select your course</option>
+                                            <option value="B.tech">B.tech</option>
+                                            <option value="M.tech">M.tech</option>
+                                            <option value="BBA">BBA</option>
+                                            <option value="BCA">BCA</option>
+                                            <option value="MBA">MBA</option>
+                                            <option value="B.voc">B.voc</option>
+                                            <option value="Diploma">Diploma</option>
+                                            </select></br>
+                                                  Select Your Year : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                  <select class="course" name="course" id="course" required>
+                                                  <option value="">Please select your Year &nbsp&nbsp;</option>
+                                                  <option value="1">1st</option>
+                                                  <option value="2">2nd</option>
+                                                  <option value="3">3rd</option>
+                                                  <option value="4">4th</option>
+                                                  </select><br>
+                                                        Select Your Branch :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <select class="branch" name="branch" id="branch" required>
+                                                        <option value="">Please select your Branch </option>
+                                                        <option value="cse">CSE</option>
+                                                        <option value="it">IT</option>
+                                                        <option value="me">ME(Mechanical)</option>
+                                                        <option value="ece">ECE</option>
+                                                        <option value="te">TE(Textile)</option>
+                                                        <option value="ce">CE(Civil)</option>
+                                                        </select><br><br>
+                                                <center><button type="submit" name="submit" style="width: 120px; height: 30px;"><strong>Submit</strong></button></center>
+
+      </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
